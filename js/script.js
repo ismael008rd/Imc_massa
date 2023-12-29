@@ -83,7 +83,7 @@ function CalcularImc(){
        
   console.log(imc)
 
-  if (imc < 16 && imc<=16,99) {
+  if (imc<=16.99) {
     imcResult='Muito abaixo do peso'
     console.log('Muito abaixo do peso');
     imcR.innerHTML=imc
@@ -98,9 +98,11 @@ function CalcularImc(){
 } else if (imc >= 25 && imc<=29.9) {
     imcResult='Acimar do peso'
     imcR.innerHTML=imc
+    console.log('acimar do peso')
 } else if (imc >=30 && imc <=34.9) {
     imcResult='Obesidade grau I'
     imcR.innerHTML=imc
+
     console.log('Obesidade grau I');
 } else if (imc >=35 && imc<= 40) {
     imcResult='Obesidade grau II'
