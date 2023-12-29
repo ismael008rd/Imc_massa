@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&family=Sarabun:ital,wght@0,200;0,300;0,500;1,100;1,200;1,400;1,500&display=swap');
+
+/* font-family: 'Joti One', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sarabun', sans-serif; */
+
+
 *{
     padding: 0;
     margin: 0;
@@ -15,19 +25,22 @@ body{
 
 .container{
     position: relative;
-    padding-top: 30px;
+   
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height:100%;
-    background-image: linear-gradient(#d05b5b,#b54040,#de6a05);
+    background: linear-gradient(to right, #024774, #05652b);
  
 }
 .container h1{
+    color: rgb(249, 119, 27);
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
     position: absolute;
-    top:50px
+    top:100px
 }
 
 .alturapeso{
@@ -50,34 +63,50 @@ body{
     align-items: center;
     justify-content: center;
    padding: 10px;
-   width: 60%;
-   height: 50%;
+   max-width: 700px;
+   width: 80%;
+   height: 20%;
     /* background-color: blue; */
    
 }
 
 .alturapeso label{
-    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.4em;
+    color: rgb(255, 180, 180);
     margin: 5px;
 }
 .alturapeso input{
     border: none;
-    padding: 5px;
+    font-size: 2em;
+    color: #6e16c6;
+    padding: 15px;
     width: 100%;
     border-radius:7px;
     outline: none;
 }
+.alturapeso input:hover{
+    outline: 3px solid rgb(0, 255, 140);
+}
 .btn_calcular{
-    padding: 10px;
-    background-color: #40b54a;
+    padding: 20px;
+    width: 80%;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    align-items: center;
+    background-color: #5608a4;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    color: white;
+    color: rgb(36, 193, 193);
+}
+.btn_calcular:hover{
+    background-color: #6f19c4;
 }
 
 .modal{
-    /* display: none; */
+    display: none;
 }
 
 .modal_backdrop{
@@ -98,7 +127,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #d05b5b;
+    background-color: #24343a;
     bottom: 5%;
     left: 5%;
 }
@@ -145,9 +174,26 @@ body{
    ;
 }
 .btn_close{
-    background-color: blue;
-    padding: 5px;
+    background-color: rgb(255, 0, 230);
+    padding: 9px;
+    border-radius: 5px;
+
     text-align: center;
     color: white;
     cursor: pointer;
+}
+.infor_imc{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.imcR{
+    color: rgb(206, 54, 54);
+}
+.imc_result h2{
+    font-family: 'Lato', sans-serif;
+    color: rgb(58, 236, 58);
 }
