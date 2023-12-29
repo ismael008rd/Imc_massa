@@ -83,7 +83,7 @@ function CalcularImc(){
        
   console.log(imc)
 
-  if (imc < 16) {
+  if (imc < 16 && imc<=16,99) {
     imcResult='Muito abaixo do peso'
     console.log('Muito abaixo do peso');
     imcR.innerHTML=imc
